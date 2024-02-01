@@ -1,1 +1,12 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+* {
+  margin: 0;
+  padding: 1rem;
+  font-family: "Press Start 2P", cursive;
+  color: #ffcc01;
+}
+
+* {
+  background-color: #16274f;
+}
+/*# sourceMappingURL=main.css.map */

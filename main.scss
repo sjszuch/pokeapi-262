@@ -1,0 +1,16 @@
+$yellow: #ffcc01;
+$blue: #395aa8;
+
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 1rem;
+
+  font-family: "Press Start 2P", cursive;
+  color: $yellow;
+}
+
+* {
+  background-color: #16274f;
+}
