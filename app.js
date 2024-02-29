@@ -1,3 +1,4 @@
+const e = require('express');
 const express = require('express');
 const app = express();
 const request = require('request');
@@ -18,8 +19,10 @@ app.get('/pokemon', (req, res) => {
     // Retrieves the image
     request('https://pokeapi.co/api/v2/pokemon/' + pokemonName, function (error, response, body) {
         if (!error && response.statusCode == 200) {
-            // send an image of that pokemon
-            res.send('<img src="' + JSON.parse(body).sprites.front_default + '">');
+            res.send(JSON.parse(body).sprites.front_default);
+        }
+        else {
+            res.send("Error: " + response.statusCode);
         }
     });
 
